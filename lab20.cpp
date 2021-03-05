@@ -8,7 +8,7 @@ int main(){
 	Unit hero("Hero",name);
 
 	Equipment sword(0,8,4);
-  Equipment axes(0,16,-3);
+  Equipment Machine_Gun(0,45,-3);
   Equipment shield(0,-1,7);
   Equipment armor(25,-2,2);
 
@@ -16,12 +16,12 @@ int main(){
 
 
 	char eq;
-	cout << " [1] Sword \n [2] Axes \n [3] Shield \n [4] Armor \n";
+	cout << " [1] Sword \n [2] Machine_Gun \n [3] Shield \n [4] Armor \n";
 	cout << "Please selet your equipment: ";
 	cin >> eq;
 
   if(eq == '1') hero.equip(&sword);
-	if(eq == '2') hero.equip(&axes);
+	if(eq == '2') hero.equip(&Machine_Gun);
 	if(eq == '3') hero.equip(&shield);
 	if(eq == '4') hero.equip(&armor);
 
@@ -59,12 +59,12 @@ int main(){
 
 		if(player_action == 'C'){
 			char eq;
-			cout << " [1] Sword \n [2] Axes \n [3] Shield \n [4] Armor \n";
+			cout << " [1] Sword \n [2] Machine_Gun \n [3] Shield \n [4] Armor \n";
 			cout << "Please select your equipment: ";
 			cin >> eq;
 
       if(eq == '1') hero.equip(&sword);
-			if(eq == '2') hero.equip(&axes);
+			if(eq == '2') hero.equip(&Machine_Gun);
 			if(eq == '3') hero.equip(&shield);
 			if(eq == '4') hero.equip(&armor);
 
